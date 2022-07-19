@@ -2,7 +2,7 @@ package Uopeople;
 
 public class AcademicStaff extends Student implements StaffLogin {
    private double hourlyRate, hoursWorked, overtime, salaryAmount;
-    String courses,lunchTicket;
+    String courses;
 
     AcademicStaff(String firstName, String lastName, String idCard, String busTicket, String lunchTicket,String courses, double hourlyRate, double hoursWorked, double overtime) {
         super(firstName, lastName, idCard, busTicket, lunchTicket, courses);
@@ -27,8 +27,8 @@ public class AcademicStaff extends Student implements StaffLogin {
         return salaryAmount;
     }
 
-    public void staffLogin() {
-        System.out.println("You can log into the staff portal");
+    public String staffLogin() {
+        return "You can log into the staff portal";
     }
 
 
