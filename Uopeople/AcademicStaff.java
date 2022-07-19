@@ -21,10 +21,6 @@ public class AcademicStaff extends Student implements StaffLogin {
         spend = carDeduction - busTicketDeduction;
         return "Your transportation cost is $" + spend+".  After we cover $"+ busTicketDeduction +" of the $"+carDeduction;
     }
-    public String cafeteria(){
-        this.lunchTicket = lunchTicket;
-        return "You are entitiled to a full course meal with ticket "+lunchTicket;
-    }
     public double salary() {
         double overtimePay = 3 * hourlyRate;
         salaryAmount = (hourlyRate * hoursWorked) + (overtimePay * overtime);
