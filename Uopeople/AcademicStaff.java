@@ -2,7 +2,7 @@ package Uopeople;
 
 public class AcademicStaff extends Student implements StaffLogin {
    private double hourlyRate, hoursWorked, overtime, salaryAmount;
-    String courses;
+    String courses,lunchTicket;
 
     AcademicStaff(String firstName, String lastName, String idCard, String busTicket, String lunchTicket,String courses, double hourlyRate, double hoursWorked, double overtime) {
         super(firstName, lastName, idCard, busTicket, lunchTicket, courses);
